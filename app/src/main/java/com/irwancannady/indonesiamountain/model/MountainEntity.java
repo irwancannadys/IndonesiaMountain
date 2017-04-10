@@ -1,15 +1,9 @@
+
 package com.irwancannady.indonesiamountain.model;
 
-
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
-
-/**
- * Created by irwancannady on 4/10/17.
- * irwancannady@gmail.com
- */
 
 public class MountainEntity {
 
@@ -19,9 +13,9 @@ public class MountainEntity {
     @SerializedName("pulau")
     @Expose
     private String pulau;
-    @SerializedName("nama_gunung")
+    @SerializedName("gunung")
     @Expose
-    private List<String> namaGunung = null;
+    private List<Gunung> gunung;
     @SerializedName("lati")
     @Expose
     private Float lati;
@@ -45,12 +39,12 @@ public class MountainEntity {
         this.pulau = pulau;
     }
 
-    public List<String> getNamaGunung() {
-        return namaGunung;
+    public List<Gunung> getGunung() {
+        return gunung;
     }
 
-    public void setNamaGunung(List<String> namaGunung) {
-        this.namaGunung = namaGunung;
+    public void setGunung(List<Gunung> gunung) {
+        this.gunung = gunung;
     }
 
     public Float getLati() {
