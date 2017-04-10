@@ -12,16 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen"
-            android:theme="@style/AppTheme">
+            android:name=".mainview.SplashScreen"
+            android:theme="@style/AppTh">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mainview.HomeActivity"
-            android:theme="@style/AppTh"></activity>
+        <activity
+            android:name=".mainview.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTh">
+        </activity>
+        <activity
+            android:name=".mainview.DetailMountain"
+            android:theme="@style/AppTh" />
+
     </application>
 
 </manifest>
