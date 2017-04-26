@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.irwancannady.indonesiamountain.HomeActivity;
 import com.irwancannady.indonesiamountain.R;
-import com.irwancannady.indonesiamountain.mainview.DetailMountain;
-import com.irwancannady.indonesiamountain.mainview.HomeActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

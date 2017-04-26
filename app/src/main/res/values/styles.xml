@@ -11,7 +11,7 @@
 
     <style name="AppTh" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/toolbar</item>
         <item name="colorPrimaryDark">@color/toolbar</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>

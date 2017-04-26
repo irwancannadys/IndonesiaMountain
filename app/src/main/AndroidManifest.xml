@@ -20,11 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".mainview.HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTh">
-        </activity>
+
+        <activity android:name=".HomeActivity"
+            android:theme="@style/AppTh"/>
+
         <activity
             android:name=".mainview.DetailMountain"
             android:theme="@style/AppTh" />

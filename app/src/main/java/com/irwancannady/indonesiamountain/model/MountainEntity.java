@@ -1,24 +1,29 @@
 
 package com.irwancannady.indonesiamountain.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class MountainEntity {
 
     @SerializedName("id")
     @Expose
     private Integer id;
+
     @SerializedName("pulau")
     @Expose
     private String pulau;
+
     @SerializedName("gunung")
     @Expose
     private List<Gunung> gunung;
+
     @SerializedName("lati")
     @Expose
     private Float lati;
+
     @SerializedName("longi")
     @Expose
     private Float longi;
