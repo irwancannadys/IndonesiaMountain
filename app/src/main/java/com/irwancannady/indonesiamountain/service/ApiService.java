@@ -13,6 +13,8 @@ import rx.Observable;
 
 public interface ApiService {
 
-    @GET("")
+    String endPoint = "questions";
+
+    @GET(endPoint)
     Observable<MountainEntity> getDataMountain();
 }

@@ -1,7 +1,9 @@
-package com.irwancannady.indonesiamountain;
+package com.irwancannady.indonesiamountain.mainview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.irwancannady.indonesiamountain.R;
 
 public class HomeActivity extends AppCompatActivity {
 

@@ -3,6 +3,7 @@
     package="com.irwancannady.indonesiamountain">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity"
+        <activity android:name=".mainview.HomeActivity"
             android:theme="@style/AppTh"/>
 
         <activity
