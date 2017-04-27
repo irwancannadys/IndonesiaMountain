@@ -4,6 +4,7 @@ package com.irwancannady.indonesiamountain.presenter;
 import com.irwancannady.indonesiamountain.mainview.view.HomeActivityView;
 import com.irwancannady.indonesiamountain.model.MountainEntity;
 import com.irwancannady.indonesiamountain.service.MountainCallback;
+import com.irwancannady.indonesiamountain.service.NetworkError;
 import com.irwancannady.indonesiamountain.service.ServiceApp;
 
 import rx.Subscription;
@@ -33,9 +34,9 @@ public class HomePresenter {
             }
 
             @Override
-            public void onError() {
+            public void onError(NetworkError networkError) {
                 homeActivityView.clearLoading();
-                homeActivityView.failure("");
+                homeActivityView.failure(networkError.getAppErrorMessage());
             }
         });
 

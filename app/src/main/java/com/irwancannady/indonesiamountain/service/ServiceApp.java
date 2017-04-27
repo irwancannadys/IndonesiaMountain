@@ -37,7 +37,7 @@ public class ServiceApp {
                     @Override
                     public void onError(Throwable e) {
 
-                        mountainCallback.onError();
+                        mountainCallback.onError(new NetworkError(e));
                     }
 
                     @Override

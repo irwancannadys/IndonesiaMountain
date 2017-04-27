@@ -7,5 +7,5 @@ public interface MountainCallback {
 
     void onSuccess(MountainEntity mountainEntity);
 
-    void onError();
+    void onError(NetworkError networkError);
 }

@@ -3,17 +3,14 @@ package com.irwancannady.indonesiamountain.mainview;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import com.irwancannady.indonesiamountain.R;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class SplashScreen extends AppCompatActivity {
 
-    @BindView(R.id.text)
-    TextView text;
+    ImageView text;
 
     private static int SPLASH_TIME_OUT = 3000;
 
@@ -21,7 +18,8 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        ButterKnife.bind(this);
+
+        text = (ImageView) findViewById(R.id.text);
 
         Thread timer = new Thread() {
             @Override

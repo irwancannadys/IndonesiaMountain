@@ -50,7 +50,6 @@ public class AdapterHome extends RecyclerView.Adapter<AdapterHome.ViewHolder> {
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .skipMemoryCache(true)
                 .into(holder.background);
-
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
