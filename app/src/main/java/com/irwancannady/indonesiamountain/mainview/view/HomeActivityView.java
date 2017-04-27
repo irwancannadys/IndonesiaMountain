@@ -7,7 +7,7 @@ public interface HomeActivityView {
 
     void loadingView();
 
-    void clearView();
+    void clearLoading();
 
     void failure(String messageError);
 

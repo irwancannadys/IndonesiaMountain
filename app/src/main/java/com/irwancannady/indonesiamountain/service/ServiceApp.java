@@ -37,11 +37,12 @@ public class ServiceApp {
                     @Override
                     public void onError(Throwable e) {
 
+                        mountainCallback.onError();
                     }
 
                     @Override
                     public void onNext(MountainEntity mountainEntity) {
-
+                        mountainCallback.onSuccess(mountainEntity);
                     }
                 });
 
